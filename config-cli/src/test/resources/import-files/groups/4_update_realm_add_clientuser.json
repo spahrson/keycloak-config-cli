@@ -1,0 +1,37 @@
+{
+  "enabled": true,
+  "realm": "realmWithGroups",
+  "groups": [
+    {
+      "name": "my_realm_group_admin",
+      "path": "/my_realm_group_admin",
+      "attributes": {},
+      "realmRoles": [
+        "my_realm_role_admin"
+      ],
+      "clientRoles": {
+        "moped-client": [
+          "my_client_role"
+        ]
+      },
+      "subGroups": []
+    }
+  ],
+  "clients": [
+    {
+      "clientId": "moped-client",
+      "name": "moped-client",
+      "description": "Moped-Client",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "my-special-client-secret",
+      "directAccessGrantsEnabled": true,
+      "redirectUris": [
+        "*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    }
+  ]
+}

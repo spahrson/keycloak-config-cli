@@ -1,0 +1,16 @@
+{
+  "realm": "realmWithGroups",
+  "groups": [
+    {
+      "name": "my_realm_group_admin",
+      "path": "/my_realm_group_admin",
+      "attributes": {},
+      "realmRoles": [
+        "my_realm_role_admin",
+        "my_realm_role_user"
+      ],
+      "clientRoles": {},
+      "subGroups": []
+    }
+  ]
+}

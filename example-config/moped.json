@@ -2,6 +2,43 @@
   "id": "moped",
   "realm": "moped",
   "displayName": "MOPED Realm",
+  "groups": [
+    {
+      "name": "my_realm_group_admin",
+      "path": "/my_realm_group_admin",
+      "attributes": {},
+      "realmRoles": [
+        "my_realm_role",
+        "my_realm_role_admin"
+      ],
+      "clientRoles": {
+        "moped-client": [
+          "my_client_role"
+        ]
+      },
+      "subGroups": [
+        "my_sub_group_user"
+      ]
+    },
+    {
+      "name": "my_realm_group_user",
+      "path": "/my_realm_group_user",
+      "attributes": {},
+      "realmRoles": [
+        "my_realm_role"
+      ],
+      "clientRoles": {},
+      "subGroups": []
+    },
+    {
+      "name": "my_sub_group_user",
+      "path": "/my_sub_group_user",
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {},
+      "subGroups": []
+    }
+  ],
   "authenticationFlows": [
     {
       "alias": "my docker auth",
@@ -95,6 +132,12 @@
           "description": "My changed other moped-client role",
           "composite": false,
           "clientRole": true
+        },
+        {
+          "name": "my_realm_role_admin",
+          "description": "My realm admin role",
+          "composite": false,
+          "clientRole": false
         }
       ]
     }
