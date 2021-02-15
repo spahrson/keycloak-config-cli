@@ -399,7 +399,7 @@
 					<plugin>
 						<groupId>org.graalvm.nativeimage</groupId>
 						<artifactId>native-image-maven-plugin</artifactId>
-						<version>21.0.0</version>
+						<version>21.0.0.2</version>
 						<configuration>
                             <imageName>keycloak-config-cli-native</imageName>
                             <buildArgs>--no-fallback --no-server
