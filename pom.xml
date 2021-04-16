@@ -57,7 +57,7 @@
 
         <keycloak.version>10.0.2</keycloak.version>
         <jackson.version>2.12.1</jackson.version>
-        <testcontainers.version>1.15.2</testcontainers.version>
+        <testcontainers.version>1.15.3</testcontainers.version>
 
         <maven-release-plugin.version>3.0.0-M1</maven-release-plugin.version>
         <jacoco.version>0.8.6</jacoco.version>
